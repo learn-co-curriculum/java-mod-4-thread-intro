@@ -16,18 +16,18 @@ understand some basic terms. We’ll look at the following terms:
 - Thread
 - Stack
 
-A program is a set of instructions and data to perform a specialized task.
+A **program** is a set of instructions and data to perform a specialized task.
 
-A process is an instance of an executing program.
+A **process** is an instance of an executing program.
 Each process is an environment that allocates the necessary system resources
 to run the instructions in the program. 
 
-A thread is the smallest unit of execution within a process.  Every
+A **thread** is the smallest unit of execution within a process.  Every
 process executes at least one thread. However, a process can
 run multiple threads to carry out the program instructions.
 Each thread has its own stack.
 
-A stack holds information about the methods that are executing in
+A **stack** holds information about the methods that are executing in
 that thread. When a method is called, a "stack frame" is pushed onto the stack
 to store the details of the method call. The frame stores the method's local
 variables, including parameters and possibly the `this` reference if the method
@@ -37,11 +37,11 @@ so the thread knows where to go when the method finishes executing.
 ## Single Threaded Program Execution
 
 So far the Java programs we've written were single-threaded.
-When we run a program, Java automatically create a thread and then executes
+When we run a program, Java automatically creates a thread and then executes
 the `main` method within the thread.
 
 Let's look at a single-threaded program to understand how the call stack works.
-Consider the `v1.Dog` class shown below, which has instance variables to
+Consider the `Dog` class shown below, which has instance variables to
 store the dog's name, whether their tail is wagging, and if they like baths.
 The constructor does not assign `isWaggingTail`, so the instance variable will
 have the default value `false`.
@@ -239,9 +239,6 @@ multiple threads.
 Multithreading is the reason the browser can react to mouse clicks while loading the page,
 and why a game can handle user input from the keyboard, mouse, and touch screen while
 showing animation on the monitor screen.
-
-Once we take a deeper dive into threads, you’ll be able to handle multiple threads in your program!
-
 
 ## Resources
 
