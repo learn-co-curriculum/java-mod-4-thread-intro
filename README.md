@@ -231,7 +231,7 @@ The Java runtime system allows the threads to take turns executing
 the methods on their stack. The order and duration of each turn
 may differ every time the program executes.
 
-## Summary
+## Conclusion
 
 This lesson introduced the concept of concurrency by demonstrating a program with
 multiple threads. 
@@ -241,3 +241,9 @@ and why a game can handle user input from the keyboard, mouse, and touch screen 
 showing animation on the monitor screen.
 
 Once we take a deeper dive into threads, you’ll be able to handle multiple threads in your program!
+
+
+## Resources
+
+[Java 11 Thread](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html)  
+[Java 11 Runnable](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html)  
