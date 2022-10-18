@@ -158,7 +158,7 @@ to create and perform operations on a thread.
 
 We will adapt the `main` method to create 3 separate threads to execute
 the `eatTreats` and `takeBath` method calls.  Each thread has its
-own stack, which means the methods can execute is a concurrent rather than
+own stack, which means the methods can execute concurrently rather than
 sequential order.
 
 We will pass a lambda expression as an argument to the `Thread` constructor.
